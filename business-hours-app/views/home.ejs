@@ -1,0 +1,57 @@
+<!-- views/home.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Business Hours App</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/" class="<%= currentPage === 'home' ? 'active' : '' %>">Home</a></li>
+            <li><a href="/services" class="<%= currentPage === 'services' ? 'active' : '' %>">Our Services</a></li>
+            <li><a href="/contact" class="<%= currentPage === 'contact' ? 'active' : '' %>">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content-box">
+            <h1>Welcome to Our Business</h1>
+            
+            <p>
+                We're delighted to have you here! Our company has been serving clients with 
+                excellence and dedication for over a decade. We pride ourselves on delivering 
+                top-quality services that exceed expectations.
+            </p>
+
+            <h2>Why Choose Us?</h2>
+            <p>
+                Our team of experienced professionals is committed to providing you with the 
+                best solutions tailored to your unique needs. We combine innovation with 
+                reliability to ensure your complete satisfaction.
+            </p>
+
+            <p>
+                Whether you're looking for consultation, implementation, or ongoing support, 
+                we're here to help you succeed. Our track record speaks for itself, with 
+                hundreds of satisfied clients across various industries.
+            </p>
+
+            <h2>Our Working Hours</h2>
+            <p>
+                We're available to serve you <strong>Monday through Friday, 9:00 AM to 5:00 PM</strong>. 
+                During these hours, you can reach us through our website, phone, or visit us 
+                in person at our office.
+            </p>
+
+            <p style="text-align: center; margin-top: 2rem;">
+                <a href="/services" style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: 600;">
+                    Explore Our Services
+                </a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

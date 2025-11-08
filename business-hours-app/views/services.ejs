@@ -1,0 +1,86 @@
+<!-- views/services.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Business Hours App</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/" class="<%= currentPage === 'home' ? 'active' : '' %>">Home</a></li>
+            <li><a href="/services" class="<%= currentPage === 'services' ? 'active' : '' %>">Our Services</a></li>
+            <li><a href="/contact" class="<%= currentPage === 'contact' ? 'active' : '' %>">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content-box">
+            <h1>Our Services</h1>
+            
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem;">
+                We offer a comprehensive range of professional services designed to help your 
+                business thrive in today's competitive marketplace.
+            </p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🎯 Consulting</h3>
+                    <p>
+                        Expert guidance and strategic planning to help you make informed 
+                        decisions and achieve your business goals.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>💼 Business Solutions</h3>
+                    <p>
+                        Customized solutions tailored to your specific business needs, 
+                        from startup to enterprise level.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>🚀 Digital Transformation</h3>
+                    <p>
+                        Modernize your operations with cutting-edge technology and 
+                        innovative digital strategies.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>📊 Analytics & Reporting</h3>
+                    <p>
+                        Data-driven insights and comprehensive reporting to track 
+                        performance and identify opportunities.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>🛠️ Technical Support</h3>
+                    <p>
+                        Reliable, round-the-clock technical assistance to keep your 
+                        systems running smoothly.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>📈 Growth Strategy</h3>
+                    <p>
+                        Proven strategies and methodologies to accelerate your 
+                        business growth and market expansion.
+                    </p>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 3rem;">
+                <a href="/contact" style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: 600;">
+                    Get Started Today
+                </a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
